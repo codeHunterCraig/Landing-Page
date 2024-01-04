@@ -24,7 +24,7 @@ body {
 ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
     padding: 0;
     margin: 0;
     
@@ -34,6 +34,11 @@ a {
     font-size: 18px;
     color: #E5E7EB;
 }
+a:hover {
+    font-size: 22px;
+    color: #fff;
+    box-shadow: 2px solid #f7f2f2;
+}
 .header {
     display: flex;
     justify-content: space-around;
@@ -41,6 +46,13 @@ a {
     font-family: Roboto, sans-serif;
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 900;
+}
+span {
+    color:#3882f6;
+    font-size: 24px;
+    font-weight: 900;
+    margin-right: auto;
 }
 .hero-container {
     display: flex;
@@ -67,21 +79,28 @@ a {
 }
 .hero-text button {
     padding: 8px 16px;
-    border-radius: 5%;
+    border-radius: 5px;
     color: #fff;
     background-color: rgb(45, 122, 238);
     border: none;
 }
-    
+.hero-text button:hover {
+    cursor: pointer;
+    box-shadow: 1px #fff;
+    padding: 10px 18px;
+    font-weight: 700;
+}    
 
 .hero-img {
     display: flex;
-    padding: 8px;
     flex-basis: 450px;
-    flex-shrink: 1;
-    background-color: #E5E7EB; 
+    flex-shrink: 1; 
     justify-content: center;
     align-items: center;
+}
+.hero-img img {
+    width: 450px;
+    border-radius: 5px;
 }
 .midsection-container {
     display: flex;
@@ -115,13 +134,17 @@ a {
 .card-img-placeholder {
     display: flex;
     flex-direction: row;
-    border: solid 3px #3882f6;
     justify-content: center;
     align-items: center;
     width: 300px;
     height: 200px;
     border-radius: 5%;
-    
+    font-size: 30px;  
+}
+.card-img-placeholder img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
 }
 .quote-section {
     display: flex;
@@ -170,6 +193,12 @@ a {
     background-color: #3882f6;
     color: #fff;
     border-radius: 5px;
+}
+.signup-wrapper button:hover {
+    cursor: pointer;
+    box-shadow: 1px #fff;
+    padding: 10px 18px;
+    font-weight: 700;
 }
 .signup-primary-text {
     font-size: 24px;
